@@ -1,0 +1,28 @@
+
+$array = array(-2, -3, 4, -1, -2, 1, 5, -3);
+
+$total_count = 0;
+$positive_number = 0;
+
+for($i =0; $i < count($array); $i++) {
+
+    $item = $array[$i];    
+    // if $i positive then add to total_count
+    
+    $positive_number = $positive_number + $item;
+    if($total_count < $positive_number) {
+        $total_count = $positive_number;        
+    }
+    if($positive_number < 0) {
+        $positive_number = 0;
+    }
+}
+print_r($total_count); 
+
+
+What is Time and Space complexity of your solution for 
+Max Subarray problem (you have to solve this task first to answer, see above) ? Can it be improved? If yes please describe how
+
+
+What is Time and Space complexity of your solution for K Unique Characters problem (you have to solve this task first to answer, see above) ? 
+Can it be improved? If yes please describe how
